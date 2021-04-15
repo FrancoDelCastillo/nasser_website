@@ -1,0 +1,194 @@
+.darkBg {
+  background-color: #ad8f72;
+  background: url("../../assets/img/henna1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.col {
+  width: 100%;
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.home__hero {
+  &-section {
+    color: #ebd8b7;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-row {
+    height: 100%;
+    width: 1100px;
+    margin-top: 76px;
+  }
+  &-subtitle {
+    font-family: "Playfair Display", serif;
+    max-width: 440px;
+    font-size: 1.1rem;
+    margin: 0;
+    color: #fff;
+  }
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.top-line {
+  display: flex;
+  height: 80px;
+}
+
+.henna-line {
+  letter-spacing: 2px;
+  font-family: "Poppins", serif;
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+.nasser-line {
+  letter-spacing: 4px;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.heading {
+  font-family: "Dancing Script", serif;
+  display: flex;
+  font-weight: 400;
+  margin: 0;
+  font-size: 4.5rem;
+  color: #ebd8b7;
+}
+
+@media screen and (max-width: 980px) {
+  .home__hero-section {
+    height: 100vh;
+  }
+
+  .heading {
+    margin-top: 0;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 740px) and (orientation: landscape) {
+  .home__hero-row {
+    top: 0px;
+  }
+
+  .top-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 50px;
+  }
+
+  .henna-line {
+    font-size: 3rem;
+  }
+  .nasser-line {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+
+  .heading {
+    font-size: 2.8rem;
+    margin: 0;
+  }
+
+  .home__hero-subtitle {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .top-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .henna-line {
+    font-size: 3.8rem;
+    height: 50px;
+  }
+  .nasser-line {
+    font-size: 3.8rem;
+    letter-spacing: 1px;
+  }
+
+  .heading {
+    font-size: 2.8rem;
+  }
+
+  .home__hero-subtitle {
+    margin-top: 0;
+    font-size: 1rem;
+    max-width: 270px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .home__hero-row {
+    top: 40px;
+    width: 100%;
+  }
+
+  .col {
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home__hero-text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .henna-line {
+    font-size: 3.6rem;
+  }
+  .nasser-line {
+    font-size: 3.6rem;
+    letter-spacing: 1px;
+  }
+
+  .heading {
+    margin-top: 0;
+    font-size: 2.3rem;
+  }
+
+  .home__hero-subtitle {
+    margin-top: 0;
+    font-size: 0.9rem;
+    max-width: 270px;
+  }
+}

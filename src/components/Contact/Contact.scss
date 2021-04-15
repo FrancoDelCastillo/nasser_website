@@ -1,0 +1,187 @@
+.paper-container::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  left: 50%;
+  width: 70%;
+  top: 0%;
+  height: 1px;
+  background-color: #303030;
+  transform: translate(-50%);
+}
+
+.paper-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 60px;
+  margin: auto;
+  margin-bottom: 50px;
+  max-width: 1000px;
+}
+
+.paper-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  height: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.paper-icon {
+  font-size: 4rem;
+  color: #99bbad;
+}
+
+.paper-title {
+  font-family: "Playfair Display", serif;
+}
+
+.email-contact {
+  font-size: 1rem;
+  color: rgb(99, 99, 99);
+}
+
+.paper-description {
+  font-size: 1.2rem;
+  color: rgb(99, 99, 99);
+}
+
+.contact-footer-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 90px;
+}
+
+.contact-footer {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  color: rgb(99, 99, 99);
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-footer-container {
+    line-height: 40px;
+  }
+  .contact-footer {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .contact-footer-container {
+    padding: 40px;
+    line-height: 40px;
+  }
+  .contact-footer {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .paper-contact {
+    height: 100%;
+    width: 32%;
+  }
+}
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  .email-contact {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .paper-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .paper-contact {
+    display: flex;
+    width: 90%;
+    height: 30%;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 20px;
+    padding: 14px;
+  }
+
+  .paper-title {
+    font-size: 1.8rem;
+  }
+
+  .email-contact {
+    font-size: 1.2rem;
+  }
+  .paper-description {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .paper-container {
+    position: relative;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .paper-container::before {
+    content: "";
+    left: 50%;
+    width: 200px;
+    top: 0%;
+    position: absolute;
+    height: 1px;
+    background-color: #303030;
+    transform: translateX(-50%);
+  }
+
+  .paper-contact {
+    display: flex;
+    width: 90%;
+    height: 134px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 20px;
+    padding: 14px;
+  }
+
+  .email-contact {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .paper-title {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .paper-description {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .contact-footer-container {
+    width: 100%;
+    line-height: 34px;
+    margin-bottom: 20px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  .contact-footer {
+    font-size: 1.6rem;
+    margin-top: 0;
+    font-weight: 400;
+  }
+}

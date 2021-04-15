@@ -1,0 +1,147 @@
+.comprar-container::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  left: 50%;
+  width: 70%;
+  top: 0%;
+  height: 1px;
+  background-color: #303030;
+  transform: translate(-50%);
+}
+
+.comprar-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 40px;
+  height: 520px;
+}
+
+.comprar-img-col {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 50%;
+  right: 0;
+  padding: 10px;
+}
+
+.comprar-desc-col {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+}
+
+.comprar-img {
+  width: 380px;
+  height: 480px;
+}
+
+.MuiStepIcon-root.MuiStepIcon-active {
+  color: #99bbad !important;
+}
+
+.MuiStepIcon-root.MuiStepIcon-completed {
+  color: #99bbad !important;
+}
+
+.label-pasos {
+  font-size: 1.8rem !important;
+}
+
+.contenido-pasos {
+  margin: 10px;
+  color: rgb(99, 99, 99);
+}
+
+.paper-comprar-pasos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.btn-comprar-pasos {
+  margin: 10px !important;
+  color: white !important;
+  background-color: #99bbad !important;
+}
+
+@media screen and (max-width: 980px) {
+  .comprar-container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  .comprar-container {
+    height: 260px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .comprar-desc-col {
+    display: block;
+    width: 100%;
+  }
+
+  .comprar-img-col {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .comprar-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .MuiStepper-root {
+    padding: 0px 4px 0px 4px !important;
+  }
+
+  .comprar-img-col {
+    display: none;
+    width: 100%;
+  }
+
+  .comprar-desc-col {
+    position: relative;
+    width: 100%;
+    justify-content: start;
+  }
+
+  .contenido-pasos {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .comprar-container {
+    padding-top: 40px;
+  }
+
+  .comprar-container::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    left: 50%;
+    width: 200px;
+    top: 0%;
+    height: 1px;
+    background-color: #303030;
+    transform: translate(-50%);
+  }
+
+  .henna-header {
+  }
+}
