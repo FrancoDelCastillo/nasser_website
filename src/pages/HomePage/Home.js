@@ -15,10 +15,10 @@ function Home() {
                 <HeroSection {...homeObjOne}/>
                 <HennaNasser/>
                 <About/>
+            </Fade>
                 <Products/>
                 <HowToBuy/>
                 <Contact/>
-            </Fade>
         </div>
     )
 }
