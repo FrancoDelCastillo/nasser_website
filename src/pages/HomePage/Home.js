@@ -11,7 +11,7 @@ import Fade from "react-reveal/Fade"
 function Home() {
     return (
         <div>
-            <Fade>
+            <Fade delay={500}>
                 <HeroSection {...homeObjOne}/>
                 <HennaNasser/>
                 <About/>

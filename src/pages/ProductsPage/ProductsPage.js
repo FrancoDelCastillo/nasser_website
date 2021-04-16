@@ -5,7 +5,7 @@ import Slide from "react-reveal/Slide"
 export default function ProductsPage(){
     return(
         <div>
-            <Slide bottom>
+            <Slide bottom delay={300}>
                 <Products/>
             </Slide>
         </div>

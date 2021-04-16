@@ -8,7 +8,7 @@ export default function HeroSection({
     return (
         <div className="home__hero-section darkBg">
             <div className="row home__hero-row">
-            <Fade left duration={1500} delay={100}>
+            <Fade left duration={1500} delay={500}>
               <div className="col">
                   <div className="home__hero-text-wrapper">
                       
