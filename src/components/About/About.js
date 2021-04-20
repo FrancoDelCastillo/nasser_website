@@ -2,10 +2,9 @@ import React from 'react'
 import "./About.scss"
 import video2 from "../../assets/video/video2.mp4"
 
-
 export default function About(){
+
     return(
-        
         <div className="about-container">
             <h1 className="about-header">Sobre Nosotros </h1>
             

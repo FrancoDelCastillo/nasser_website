@@ -2,7 +2,6 @@ import React from 'react'
 import product_card from "../../data/product_data"
 import "./Products.scss"
 
-
 const Products = () => {
     const listItems = product_card.map((item)=>
         <div className="card_container" key={item.id}>
@@ -14,16 +13,18 @@ const Products = () => {
                 <p className="product_description">{item.description}</p>
             </div>
         </div>
+
     );
 
     return (
         
-        <div className="products-container">
+        <div className="products-container">            
             <h3 className="products-header">Productos</h3>
             <div className="cards-wrapper">
             {listItems}
             </div>
         </div>
+        
     )
 }
 

@@ -18,9 +18,16 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import ScrollToTop from "./components/ScrollToTop"
 
+
+
 function App() {
+
+  
+
   return (
-    <>
+    <div data-aos="fade"
+    data-aos-delay="500"
+    data-aos-duration="1000">
     <Router>
       <ScrollToTop/>
 
@@ -40,7 +47,7 @@ function App() {
       <WebsiteRights/>
 
     </Router>
-    </>
+    </div>
   );
 }
 

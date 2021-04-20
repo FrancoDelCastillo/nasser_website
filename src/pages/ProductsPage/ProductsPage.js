@@ -1,13 +1,16 @@
 import React from "react"
 import Products from "../../components/Products/Products"
-import Slide from "react-reveal/Slide"
+
+import AOS from "aos"
 
 export default function ProductsPage(){
+
+    AOS.init();
+
     return(
-        <div>
-            <Slide bottom delay={300}>
+        <div data-aos="fade-up"
+        data-aos-duration="1000">
                 <Products/>
-            </Slide>
         </div>
     )
 }

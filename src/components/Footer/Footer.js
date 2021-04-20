@@ -5,7 +5,6 @@ import {
     FaFacebook,
     FaInstagram,
     FaYoutube,
-    FaGlobeAmericas,
     FaWhatsapp
 } from "react-icons/fa"
 import brandHorizontal from "../../brand/brand-horizontal-white.png"
@@ -25,15 +24,15 @@ function Footer() {
             </div>
             </section>
             <div className="footer-links">
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
+                <div className="footer-links-wrapper">
+                    <div className="footer-links-items">
                     <Link to="/home"><h2>Inicio</h2></Link>
                     <Link to="/productos"><h2>Productos</h2></Link>
                     <Link to="/como-comprar"><h2>Cómo comprar</h2></Link>
                     <Link to="/contacto"><h2>Contacto</h2></Link>
                         
                     </div>
-                    <div className="footer-link-items">
+                    <div className="footer-links-items">
                         <h2>Redes Sociales</h2>
                     <Link to="#">Instagram</Link>
                     <Link  to={'//www.facebook.com/Nasser-Group-101927825369075'}  

@@ -1,16 +1,23 @@
 import React from 'react'
 import "./HeroSection.scss"
-import Fade from "react-reveal/Fade"
+import AOS from "aos"
+
 
 export default function HeroSection({
     henna, topLine, headLine, description
 }) {
+    AOS.init();
+
     return (
+        
         <div className="home__hero-section darkBg">
             <div className="row home__hero-row">
-            <Fade left duration={1500} delay={500}>
+            
               <div className="col">
-                  <div className="home__hero-text-wrapper">
+                  <div data-aos="fade" 
+                  data-aos-delay="800"
+                  data-aos-mirror="true"
+                  data-aos-duration="1300" className="home__hero-text-wrapper">
                       
                         <div className="top-line">
                             <h1 className="henna-line">
@@ -27,9 +34,11 @@ export default function HeroSection({
                         
                     </div>
                 </div>    
-                </Fade>                  
+                
+                </div>
             </div>
-        </div>
+        
+
     )
 }
 

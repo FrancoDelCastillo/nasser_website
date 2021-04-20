@@ -1,13 +1,18 @@
 import React from "react"
 import HowToBuy from "../../components/HowToBuy/HowToBuy"
-import Slide from "react-reveal/Slide"
+
+import AOS from "aos"
 
 export default function HowToBuyPage(){
+
+    AOS.init();
+
     return(
-        <div>
-            <Slide left>
+        <div data-aos="fade"
+        data-aos-duration="1000">
+            
                 <HowToBuy/>
-            </Slide>
+            
         </div>
     )
 }

@@ -1,15 +1,18 @@
 import React from 'react'
 import HennaNasser from "../../components/HennaNasser/HennaNasser"
 import About from "../../components/About/About"
-import Slide from "react-reveal/Slide"
+import AOS from "aos"
+
 
 function AboutPage() {
+
+    AOS.init();
+
     return (
-        <div>
-            <Slide bottom>
+        <div data-aos="fade-right"
+        data-aos-duration="1000">
                 <About/>
                 <HennaNasser/>
-            </Slide>
         </div>
     )
 }

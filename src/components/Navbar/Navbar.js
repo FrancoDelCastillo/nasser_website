@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {FaBars, FaTimes} from "react-icons/fa"
 import "./Navbar.scss"
 import { IconContext } from "react-icons/lib"
-import brandHorizontalWhite from "../../brand/brand-horizontal-green.svg"
+import brandHorizontalGreen from "../../brand/brand-horizontal-green.svg"
 
 export default function Navbar(){
 
@@ -18,7 +18,7 @@ export default function Navbar(){
             <div className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        <img src={brandHorizontalWhite} className="navbar-icon"/>
+                        <img src={brandHorizontalGreen} className="navbar-icon"/>
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         {click ? <FaTimes className="fa-times"/> : <FaBars className="fa-bars"/>}

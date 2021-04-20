@@ -40,7 +40,7 @@
   }
 }
 
-.footer-link {
+.footer-links {
   &-wrapper {
     display: flex;
     justify-content: space-around;
@@ -60,7 +60,7 @@
       &:hover {
         color: #99bbad;
         transition: 0.1s ease-out;
-        transform: scale(1.4);
+        transform: scale(1.2);
       }
     }
     & h2 {
@@ -185,7 +185,7 @@
 }
 
 @media screen and (max-width: 414px) {
-  .footer-link-wrapper {
+  .footer-links-wrapper {
     padding: 20px;
   }
   .footer-subscription-heading {
@@ -205,7 +205,7 @@
     width: 100%;
   }
 
-  .footer-link-items {
+  .footer-links-items {
     & h2 {
       font-size: 1.2rem;
     }
